@@ -1,0 +1,19 @@
+[package]
+name = "nwg_ui"
+version = "1.0.0"
+authors = ["alex@wiltondb.com"]
+edition = "2018"
+license = "Apache-2.0"
+documentation = "https://docs.rs/nwg_ui"
+repository = "https://github.com/wiltondb/nwg_ui"
+readme = "README.md"
+categories = ["gui"]
+description = "GUI library that builds upon native-windows-gui"
+include = [
+    "src/*.rs",
+    "Cargo.toml",
+]
+
+[dependencies]
+nwg = {version = "1.0.12", package = "native-windows-gui", features = ["all", "flexbox"]}
+winapi = "0.3.9"
