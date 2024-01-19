@@ -25,7 +25,6 @@ pub struct MarginBuilder {
     bottom: u32,
 }
 
-#[allow(dead_code)]
 impl MarginBuilder {
     pub fn start_pt(mut self, start: u32) -> Self {
         self.start = start;
