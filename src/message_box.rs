@@ -48,3 +48,6 @@ pub fn message_box_warning_yn(message: &str) -> bool {
     }
 }
 
+pub fn message_box_error(message: &str) -> () {
+    let _ = message_box("Error", message, winuser::MB_OK | winuser::MB_ICONERROR);
+}
